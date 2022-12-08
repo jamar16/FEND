@@ -1,0 +1,160 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* Custom properties */
+:root{
+    --light-color: #fff;
+    --light-color-alt: #02b3e4;
+    --primary-background-color: #131417;
+    --secondary-background-color: #252830;
+    --hover-light-color: var(--light-color);
+    --hover-dark-color: var(--primary-background-color);
+    --gradient-color: linear-gradient(
+        115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    --transparent-light-color: rgba(255,255,255,.05);
+    --transparent-dark-color: rgba(0,0,0,.75);
+    --font-family: 'Poppins', sans-serif;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 4rem;
+    --gap: 2rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+    --item-min-height-sm: 20rem;
+    --item-min-height-md: 30rem;
+}
+/* base style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    color: var(--light-color-alt);
+    background-color: var(--primary-background-color);
+    letter-spacing: 1px;
+    transition: background-color .25s, color .25s;
+}
+
+a{
+        text-decoration: none;
+        color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+input,
+button{
+    font:inherit;
+    color: inherit;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+i{
+    font-size: var(--font-size-md);
+}
+
+/* hello world */
+/* theme color change */
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 600px) {
+   .container {
+    display:grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 250px 200px;
+      border: 2px solid yellow;
+
+      grid-template-areas:
+      "hd"
+      "feat"
+      "main"
+      "ft";
+    
+ } 
+}
+
+.box{
+    border: 1px solid red;
+    background: #F8FA9D;
+    }
+
+  .main{
+      grid-area:hd;
+  }
+
+  .footer{
+    grid-area: ft;  
+  }
+  .sidebar{
+    grid-area: feat;
+  }
+  .content{
+    grid-area: main;
+  }
+
+
+
+.header {
+    background-color: #252830;
+    top: 0;
+    left:0;
+    width: 100%;
+    text-align: center;
+}
+
+.nav {
+    display: inline-flex;
+    flex-flow: column;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #fff ;
+}
+
+.background {
+    background-image: url(udacity.jpg);
+    background-size: cover;
+}
+
+
+.border {
+ font: bold 1rem sans-serif;
+ border: 0.5rem outset #02b3e4;
+ border-radius: 12px;
+ background-color: #02d0e3;
+}
+
+.list {
+    padding: 0;
+    margin: 0.5rem;
+    overflow: hidden;
+}
+
+.menu {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+} */
