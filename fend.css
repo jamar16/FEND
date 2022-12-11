@@ -41,13 +41,12 @@ html {
 	font-size: 62.5%;
 }
 
-.header{
-    background-color: var(--secondary-background-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
+.header {
+	background-color: var(--secondary-background-color);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
 body {
@@ -81,23 +80,25 @@ i {
 	font-size: var(--font-size-md);
 }
 
-.container{
-    max-width: 160rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+.container {
+	max-width: 160rem;
+	margin: 0 auto;
+	padding: 0 1.5rem;
 }
 
-.place-items-center{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.place-items-center {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .navbar {
 	display: flex;
 	flex-direction: column;
-	
 	font-size: var(--font-size-md);
+	position: absolute;
+	right: 0;
+	z-index: 999;
 }
 
 .menu {
@@ -109,7 +110,7 @@ i {
 	height: auto;
 	overflow: hidden;
 	border-bottom-left-radius: 15%;
-	
+	background-color: #ffff;
 }
 
 /* horizontal menu items */
