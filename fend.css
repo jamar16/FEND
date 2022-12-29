@@ -73,6 +73,7 @@ body {
 	overflow: hidden;
 	border-bottom-left-radius: 15%;
 	background-color: #ffff;
+	 transform: scale(0);
 }
 
 .header {
@@ -135,12 +136,20 @@ i {
 	display: none;
 }
 
+/* classes to hide elements*/
+/* .hide-menu:hover,
+.hide-menu:focus  {
+  transform: scale(0);
+} */
 
 .screen-lg-hidden > * {
 	color:#131417;
-	 
-	
 }
+
+/* .hide-menu {
+  transform: scale(0);
+  cursor: pointer;
+} */
 
 
 
@@ -167,6 +176,46 @@ i {
 .top {
 	text-align: center;
 }
+
+/* filler content*/
+
+.fillerContent {
+	display: grid;
+	grid-template-columns: repeat(minmax(1fr, 200px));
+	grid-gap: 1.5rem;
+	padding: 7rem;
+	position: relative;
+
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 20px;
+	padding: 2rem;
+	
+  }
+
+.card {
+	background: white;
+	border-radius: 30px;
+	padding-bottom: 1rem;
+  }
+
+  .card img {
+	width: 100%;
+	border-radius: 10% 10% 0% 0%;
+  }
+
+  .blogButton {
+	border: var(--secondary-background-color);
+	background-color: var(--secondary-background-color);
+	outline: var(--secondary-background-color);
+	border-radius: 20px;
+	width: 80%;
+	margin: 1rem;
+	padding: 0.5rem;
+  }
 
 /* @media (max-width: 600px) {
    .container {
