@@ -50,7 +50,14 @@ body {
 	transition: background-color 0.25s, color 0.25s;
 }
 
-@media (max-width: 479px) {
+
+.header {
+	background-color: var(--secondary-background-color);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
 }
 
 .navbar {
@@ -77,18 +84,13 @@ body {
 
 .open-menu-icon {
 	position: absolute;
-	right: 30px;
-	top: 0;
+	right: 8px;
+	top: 15px;
+	background-color: transparent;
+	color: var(--light-color);
+	
 }
 
-.header {
-	background-color: var(--secondary-background-color);
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 999;
-}
 
 .button-continer {
 	display: flex;
@@ -127,12 +129,19 @@ i {
 	display: none;
 }
 
-.btn {
+@media (max-width: 479px) {
+	main {
+	display: flex;
+	flex-flow: column wrap;
+	}
+}
+
+.btn, .blogButton {
 	cursor: pointer;
 }
 
 .border:hover,
-.btn:hover {
+.btn:hover, .open-menu-icon:hover {
 	color: var(--hover-dark-color);
 }
 
@@ -213,43 +222,23 @@ i {
 	padding: 0.5rem;
 }
 
-/* @media (max-width: 600px) {
-   .container {
-    display:grid;
-      grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 250px 200px;
-      border: 2px solid yellow;
+.footer-tags {
+	display: inline-grid;
+	grid-auto-flow: row;
+	grid-gap: 24px;
+	justify-items: center;
+	margin: auto;
+  }
 
-      grid-template-areas:
-      "hd"
-      "feat"
-      "main"
-      "ft";
-    
- } 
-}
-
+@media (max-width: 900px) {
+  
 .box{
-    border: 1px solid red;
-    background: #F8FA9D;
+    border: .5rem solid var(--primary-background-color);
+    background: var(--secondary-background-color);
+	width: 100%;
     }
 
-  .main{
-      grid-area:hd;
-  }
-
-  .footer{
-    grid-area: ft;  
-  }
-  .sidebar{
-    grid-area: feat;
-  }
-  .content{
-    grid-area: main;
-  }
-
-
-
+  
 .header {
     background-color: #252830;
     top: 0;
@@ -267,7 +256,7 @@ i {
 }
 
 h1 {
-    color: #fff ;
+    color: 02b3e4 ;
 }
 
 .background {
@@ -293,4 +282,10 @@ h1 {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1.5rem;
-} */
+}
+
+.footer {
+	position: relative;
+}
+
+}
