@@ -1,4 +1,6 @@
 /* Import font */
+@import "menus.css";
+@import "buttons.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 /* Custom properties */
 :root {
@@ -69,34 +71,6 @@ body {
 	z-index: 999;
 }
 
-.menu {
-	position: absolute;
-	right: 0;
-	background-color: var(--secondary-background-color);
-	padding: 1.5rem;
-	width: 200px;
-	height: auto;
-	overflow: hidden;
-	border-bottom-left-radius: 15%;
-	background-color: #ffff;
-	transform: scale(0);
-}
-
-.open-menu-icon {
-	position: absolute;
-	right: 8px;
-	top: 15px;
-	background-color: transparent;
-	color: var(--light-color);
-	
-}
-
-
-.button-continer {
-	display: flex;
-	justify-content: space-between;
-}
-
 a {
 	text-decoration: none;
 	color: inherit;
@@ -106,8 +80,7 @@ ul {
 	list-style: none;
 }
 
-input,
-button {
+input {
 	font: inherit;
 	color: inherit;
 	border: none;
@@ -125,8 +98,8 @@ i {
 	padding: 0 1.5rem;
 }
 
-.close-menu-icon {
-	display: none;
+figure {
+	color: red;
 }
 
 @media (max-width: 479px) {
@@ -136,12 +109,8 @@ i {
 	}
 }
 
-.btn, .blogButton {
-	cursor: pointer;
-}
-
 .border:hover,
-.btn:hover, .open-menu-icon:hover {
+.open-menu-icon:hover {
 	color: var(--hover-dark-color);
 }
 
@@ -202,7 +171,7 @@ i {
 }
 
 .card {
-	background: white;
+	background:var(--light-color );
 	border-radius: 30px;
 	padding-bottom: 1rem;
 }
@@ -212,15 +181,6 @@ i {
 	border-radius: 10% 10% 0% 0%;
 }
 
-.blogButton {
-	border: var(--secondary-background-color);
-	background-color: var(--secondary-background-color);
-	outline: var(--secondary-background-color);
-	border-radius: 20px;
-	width: 80%;
-	margin: 1rem;
-	padding: 0.5rem;
-}
 
 .footer-tags {
 	display: inline-grid;

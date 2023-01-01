@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title></title>
   <link rel="stylesheet" href="../../base.css">
+  <link rel="stylesheet" href="./click-outside.css">
 </head>
 
 <body>
@@ -15,8 +16,8 @@
       <img src="https://picsum.photos/200?random=1" alt="recent updates">
       <h2>recent updates</h2>
       <button>Learn more →</button>
-      <p class="filler"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Alias quisquam et consectetur assumenda placeat voluptate inventore esse labore 
+      <p class="filler"> Lorem ipsum dolor sit <b> consectetur adipisicing elit. 
+        Alias quisquam et </b>consectetur assumenda placeat voluptate inventore esse labore 
         accusantium molestiae ipsam voluptatum sit, tempore sed? Repellendus consequatur fuga 
         magni eligendi?</p>
     </div>
@@ -25,7 +26,7 @@
       <h2>blog-post</h2>
       <button>Learn more →</button>
       <p class="filler"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Alias quisquam et consectetur assumenda placeat voluptate inventore esse labore 
+        Alias quisquam et <em> assumenda placeat voluptate inventore esse labore</em> 
         accusantium molestiae ipsam voluptatum sit, tempore sed? Repellendus consequatur fuga 
         magni eligendi?</p>
     </div>
@@ -33,7 +34,7 @@
       <img src="https://picsum.photos/200?random=3" alt="blog-post">
       <h2>blog-post</h2>
       <button>Learn more →</button>
-      <p class="filler"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      <p class="filler"> <u>ipsum dolor sit amet consectetur adipisicing elit</u> 
         Alias quisquam et consectetur assumenda placeat voluptate inventore esse labore 
         accusantium molestiae ipsam voluptatum sit, tempore sed? Repellendus consequatur fuga 
         magni eligendi?</p>
@@ -42,10 +43,10 @@
       <img src="https://picsum.photos/200?random=4" alt="blog-post">
       <h2>blog-post</h2>
       <button>Learn more →</button>
-      <p class="filler"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      <p class="filler"><blockquote> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Alias quisquam et consectetur assumenda placeat voluptate inventore esse labore 
         accusantium molestiae ipsam voluptatum sit, tempore sed? Repellendus consequatur fuga 
-        magni eligendi?</p>
+        magni eligendi?</blockquote></p>
     </div>
 
   </div>
@@ -55,72 +56,24 @@
 
     </div>
   </div>
-  <style>
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-gap: 20px;
-      padding: 2rem;
-    }
 
-    .card {
-      background: white;
-      border-radius: 2px;
-      padding-bottom: 1rem;
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 50%;
-    }
-
-    .card h2 {
-      color: black;
-    }
-
-    .modal-outer {
-      display: grid;
-      background: hsla(50, 100%, 50%, 0.7);
-      position: fixed;
-      height: 100vh;
-      width: 100vw;
-      top: 0;
-      left:0;
-      justify-content: center;
-      align-items: center;
-      /*hide this modal until it is needed*/
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s;
-    }
-
-    .modal-outer img {
-      width: 100%;
-      height: 100%;
-
-    }
-
-    .modal-outer.open {
-      opacity: 1;
-      pointer-events: all;
-    }
-
-    .modal-inner {
-      max-width: 600px;
-      min-width: 400px;
-      padding: 2rem;
-      border-radius: 5px;
-      min-height: 200px;
-      background: white;
-      transform: translateY(-200%);
-      transition: transform 2s;
-    }
-
-    .modal-outer.open .modal-inner{
-      transform: translateY(0);
-    }
-    
-  </style>
+  <div class="blog-info">
+    <ul>Author Info
+      <li>Name</li>
+      <li>Title</li>
+      <li>Current Company/School</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi aliquam officiis asperiores qui culpa.</li>
+      <li>Avatar</li>
+    </ul>
+    <ul>Social Sharing
+      <li><a href="https://twitter.com/">Twitter</a></li>
+				<li><a href="https://codepen.io/">Codepen</a></li>
+				<li><a href="mailto:@gmail.com">Email</a></li>
+				<li><a href="https://dribbble.com/">Dribbble</a></li>
+				<li><a href="https://github.com/">Github</a></li>
+    </ul>
+  </div>
+ 
   <script src="./click-outside.js"></script>
 </body>
 
