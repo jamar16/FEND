@@ -220,7 +220,7 @@ h1 {
 }
 
 .background {
-    background-image: url(udacity.jpg);
+    background-image: url(/imgs/udacity.jpg);
     background-size: cover;
 }
 

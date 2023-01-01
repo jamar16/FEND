@@ -61,3 +61,8 @@
   .modal-outer.open .modal-inner{
     transform: translateY(0);
   }
+
+  i {
+    font-size: 1.5rem;
+    padding: 2px;
+  }
